@@ -1,0 +1,162 @@
+body{
+    background: #0D1024;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.titulo{
+    font-size: 30px;
+    margin: 20px;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navegador a{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+}
+
+.containers{
+    width: 85%;
+    display: grid;
+    grid-template-areas: 
+    "redes-sociais texto img-usuario";
+    grid-template-columns: 15% 40% 45%;
+    grid-template-rows: 80vh;
+}
+
+.redes-sociais{
+    grid-area: redes-sociais;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons a{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg,#f06,#3cf);
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+    z-index: 1;
+    animation: movimento 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes movimento {
+    to{
+        transform: translate(4px, -6px);
+    }
+}
+
+.icons a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#f06,#3cf);
+    border-radius: 50%;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.icons a:hover::before{
+    filter: blur(5px);
+}
+
+.icons a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0c1022;
+    border-radius: 50%;
+    transform: scale(.88);
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.icons a:hover::after{
+    transform: scale(0);
+}
+
+.texto{
+    grid-area:texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text{
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+}
+
+.texto h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.texto h3{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.texto p{
+    margin-top: 30px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.img-usuario{
+    grid-area: img-usuario;
+}
+
+#msg{
+    font-weight: bold;
+    color: rgb(121,30,88);
+}
+
+
+
