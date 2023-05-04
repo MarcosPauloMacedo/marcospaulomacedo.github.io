@@ -138,7 +138,7 @@ body{
 .texto h3{
     font-family: 'Mochiy Pop One', sans-serif;
     font-size: 20px;
-    color: #fff;
+    color: rgb(121,30,88);
 }
 
 .texto p{
@@ -156,6 +156,10 @@ body{
 #msg{
     font-weight: bold;
     color: rgb(121,30,88);
+}
+
+.test{
+  
 }
 
 
