@@ -151,6 +151,12 @@ body{
 
 .img-usuario{
     grid-area: img-usuario;
+    display: flex;
+    justify-content: end;
+}
+
+.div-svg{
+    width: 75%;
 }
 
 #msg{
@@ -158,9 +164,6 @@ body{
     color: rgb(121,30,88);
 }
 
-.test{
-  
-}
 
 
 

@@ -11,3 +11,9 @@ setInterval(function(){
         numero++
     }
 },100)
+
+window.addEventListener('load', function() {
+    var svgParent = document.getElementById('elementoSVG');
+    svgParent.classList.add('active');
+  });
+  
