@@ -15,5 +15,8 @@ setInterval(function(){
 window.addEventListener('load', function() {
     var svgParent = document.getElementById('elementoSVG');
     svgParent.classList.add('active');
-  });
-  
+});
+
+if(numero <= numero.length){
+    console
+}
