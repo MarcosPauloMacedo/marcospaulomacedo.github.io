@@ -13,10 +13,9 @@ setInterval(function(){
 },100)
 
 window.addEventListener('load', function() {
-    var svgParent = document.getElementById('elementoSVG');
-    svgParent.classList.add('active');
+    var svgParent = document.getElementById('SVG_Object')
+    let svgDoc = svgParent.contentDocument
+    let svgElement = svgDoc.getElementById('elementoSVG')
+    console.log(svgElement)
 });
 
-if(numero <= numero.length){
-    console
-}

@@ -162,6 +162,11 @@ body{
     line-height: 1.5;
 }
 
+#msg{
+    font-weight: bold;
+    color: rgb(121,30,88);
+}
+
 .img-usuario{
     grid-area: img-usuario;
     margin-top: 30%;
@@ -169,13 +174,100 @@ body{
 
 .div-svg{
     width: 75%;
+    height: 100vh;
 }
 
-#msg{
-    font-weight: bold;
-    color: rgb(121,30,88);
+.portifolio-maquininha{
+    display: grid;
+    grid-template-areas: 
+    "img-portifolio descricao-portifolio";
+    grid-template-columns: 40% 55%;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
 
+.img-portifolio{
+    grid-area: img-portifolio;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-usuario img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.descricao-portifolio p{
+    color: #fff;
+    display: flex;
+}
+
+.descricao-portifolio h2{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.portifolio-cnaeWeb{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.descricao-cnae h2{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.descricao-cnae p{
+    color: #fff;
+}
+
+.portifolio-lendCash{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.descricao-lendCash h2{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.descricao-lendCash p{
+    color: #fff;
+}
+
+.tecnologias{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+;
+}
+
+.tecnologias p{
+    background: rgb(107, 105, 105);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.img-lendCash{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tecnologias img{
+    width: 14%;
+}
 
 
 
