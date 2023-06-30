@@ -3,9 +3,13 @@ body{
 }
 
 .cabecalho{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #0D1024;
 }
 
 .menu{
@@ -44,9 +48,8 @@ body{
     width: 85%;
     display: grid;
     grid-template-areas: 
-    "redes-sociais texto img-usuario";
-    grid-template-columns: 15% 40% 45%;
-    grid-template-rows: 80vh;
+    "redes-sociais img-usuario";
+    grid-template-columns: 55% 45%;
 }
 
 .redes-sociais{
@@ -54,6 +57,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+    height: 100vh;
 }
 
 .icons{
@@ -123,6 +128,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 30%;
+    left: 20%;
+    height: 140vh;
+    position: fixed;
 }
 
 .text{
@@ -155,8 +164,7 @@ body{
 
 .img-usuario{
     grid-area: img-usuario;
-    display: flex;
-    justify-content: end;
+    margin-top: 30%;
 }
 
 .div-svg{
