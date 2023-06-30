@@ -31,6 +31,10 @@ body{
     text-decoration: none;
 }
 
+.navegador a:hover{
+    color: rgb(121,30,88);
+}
+
 .principal{
     display: flex;
     justify-content: center;
