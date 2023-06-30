@@ -2,7 +2,7 @@ body{
     background: #0D1024;
 }
 
-.cabecalho{
+#cabecalho{
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,7 +12,7 @@ body{
     background: #0D1024;
 }
 
-.menu{
+.container-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.navegador a{
+.menu a{
     color: #fff;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
@@ -35,25 +35,22 @@ body{
     text-decoration: none;
 }
 
-.navegador a:hover{
+.menu a:hover{
     color: rgb(121,30,88);
 }
 
-.principal{
+/* principal */
+
+#principal{
     display: flex;
     justify-content: center;
 }
 
-.containers{
+.container-principal{
     width: 85%;
-    display: grid;
-    grid-template-areas: 
-    "redes-sociais img-usuario";
-    grid-template-columns: 55% 45%;
 }
 
 .redes-sociais{
-    grid-area: redes-sociais;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,12 +81,6 @@ body{
     margin: 20px 0;
     z-index: 1;
     animation: movimento 2.5s ease-in-out infinite alternate;
-}
-
-@keyframes movimento {
-    to{
-        transform: translate(4px, -6px);
-    }
 }
 
 .icons a::before{
@@ -123,8 +114,7 @@ body{
     transform: scale(0);
 }
 
-.texto{
-    grid-area:texto;
+.apresentacao{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,13 +124,13 @@ body{
     position: fixed;
 }
 
-.text{
+.apresentacao-texto{
     display: flex;
     height: 60%;
     flex-direction: column;
 }
 
-.texto h2{
+.apresentacao-texto h2{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #fff;
@@ -148,13 +138,13 @@ body{
     margin-bottom: 30px;
 }
 
-.texto h3{
+.apresentacao-texto h3{
     font-family: 'Mochiy Pop One', sans-serif;
     font-size: 20px;
     color: rgb(121,30,88);
 }
 
-.texto p{
+.apresentacao-texto p{
     margin-top: 30px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -167,12 +157,15 @@ body{
     color: rgb(121,30,88);
 }
 
-.img-usuario{
-    grid-area: img-usuario;
-    margin-top: 30%;
+.conteudo {
+    width: 45%;
+    margin-left: auto;
 }
 
-.div-svg{
+.svg-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 75%;
     height: 100vh;
 }
@@ -186,21 +179,26 @@ body{
     margin-bottom: 100px;
 }
 
-.img-portifolio{
+.container-portifolio-maquininha{
     grid-area: img-portifolio;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.img-usuario img{
+.img-paginas-portifolio{
     width: 100%;
     border-radius: 10px;
 }
 
-.descricao-portifolio p{
-    color: #fff;
+.tecnologias{
     display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.tecnologias img{
+    width: 14%;
 }
 
 .descricao-portifolio h2{
@@ -208,6 +206,11 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 20px;
     color: #fff;
+}
+
+.descricao-portifolio p{
+    color: #fff;
+    display: flex;
 }
 
 .portifolio-cnaeWeb{
@@ -246,28 +249,16 @@ body{
     color: #fff;
 }
 
-.tecnologias{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-;
-}
-
-.tecnologias p{
-    background: rgb(107, 105, 105);
-    padding: 3px;
-    border-radius: 10px;
-}
-
 .img-lendCash{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.tecnologias img{
-    width: 14%;
+@keyframes movimento {
+    to{
+        transform: translate(4px, -6px);
+    }
 }
-
 
 
