@@ -119,7 +119,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 30%;
-    left: 20%;
+    left: 17%;
     height: 140vh;
     position: fixed;
 }
@@ -166,16 +166,23 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 75%;
+    align-items: center;
+    width: 100%;
     height: 100vh;
+}
+
+.img-principal{
+    width: 70%;
 }
 
 .portifolio{
     display: grid;
+    padding: 10px;
+    border-radius: 10px;
     grid-template-areas: "img-portifolio descricao-portifolio";
     grid-template-columns: 40% 55%;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .container-portifolio{
@@ -222,7 +229,7 @@ body{
 }
 
 .img-sol, .img-truffle{
-    background: rgb(121,30,88);
+    background: rgb(94 234 212);
     border-radius: 50%;
 }
 
