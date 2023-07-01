@@ -182,6 +182,7 @@ body{
     grid-template-areas: "img-portifolio descricao-portifolio";
     grid-template-columns: 40% 55%;
     justify-content: space-between;
+    text-decoration: none;
     margin-bottom: 90px;
 }
 
