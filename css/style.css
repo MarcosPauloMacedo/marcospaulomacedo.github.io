@@ -170,16 +170,15 @@ body{
     height: 100vh;
 }
 
-.portifolio-maquininha{
+.portifolio{
     display: grid;
-    grid-template-areas: 
-    "img-portifolio descricao-portifolio";
+    grid-template-areas: "img-portifolio descricao-portifolio";
     grid-template-columns: 40% 55%;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
-.container-portifolio-maquininha{
+.container-portifolio{
     grid-area: img-portifolio;
     display: flex;
     flex-direction: column;
@@ -203,56 +202,28 @@ body{
 
 .descricao-portifolio h2{
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
     color: #fff;
 }
 
 .descricao-portifolio p{
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.2px;
     color: #fff;
     display: flex;
-}
-
-.portifolio-cnaeWeb{
-    display: grid;
-    grid-template-columns: 40% 55%;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-
-.descricao-cnae h2{
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.descricao-cnae p{
-    color: #fff;
-}
-
-.portifolio-lendCash{
-    display: grid;
-    grid-template-columns: 40% 55%;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.descricao-lendCash h2{
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.descricao-lendCash p{
-    color: #fff;
 }
 
 .img-lendCash{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.img-sol, .img-truffle{
+    background: rgb(121,30,88);
+    border-radius: 50%;
 }
 
 @keyframes movimento {
