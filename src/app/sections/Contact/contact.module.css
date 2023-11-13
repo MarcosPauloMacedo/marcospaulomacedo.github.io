@@ -1,0 +1,27 @@
+.contact{
+    background: #0D1024;
+    height: calc(100vh - 68px);
+}
+
+.form{
+    background: #26338b1d;
+    border: 2px solid #791E58;
+    color: #fff;
+    border-radius: 10px;
+    height: 80%;	
+}
+
+.title{
+    color: #791E58;
+}
+
+.styleButton{
+    background: #791E58;
+    color: #fff;
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    bottom: 20px;
+    align-self: center;
+    width: 30%;
+}

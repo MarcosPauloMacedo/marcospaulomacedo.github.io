@@ -1,0 +1,13 @@
+.img{
+    height: calc(100vh - 68px);
+}
+
+@media screen and (max-width: 768px) {
+    .img img{
+        display: none;
+    }
+
+    .img{
+        height: 100%;
+    }
+}
