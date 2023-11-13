@@ -1,0 +1,59 @@
+.portifolio{
+    width: 100%;
+}
+
+.styleH6{
+    color: #54D3CB;
+}
+
+.styleTitle{
+    color: #54D3CB;
+    border-bottom: 1px solid #54D3CB;
+    font-size: 20px;
+    text-align:right;
+    margin-bottom: 20px;
+}
+
+.styleP{
+    color: #7C8CA9;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.styleBox{
+    border: 1px solid #26338b;
+    border-radius: 10px;
+    background-color: #26338b1d;
+    transition: transform 0.3s ease;
+}
+
+.styleBox:hover{
+  cursor: pointer;
+}
+
+.styleI{
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.styleIHover {
+    transform: translate(3px, -7px);
+}
+
+.backgroundTech{
+    background: #122D3E;
+    color:#54D3CB;
+}
+
+.fontSize16{
+    font-size: 13px;
+}
+
+.marginNone{
+    margin: 0;
+}
+
+.center{
+    text-align: center;
+}
+

@@ -1,0 +1,28 @@
+.formacao{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.formacaoContn{
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    /* background-color: #101430; */
+}
+
+.styleTitle{
+    color: #54D3CB;
+    border-bottom: 1px solid #54D3CB;
+    font-size: 20px;
+    text-align:right;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .formacao{
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
