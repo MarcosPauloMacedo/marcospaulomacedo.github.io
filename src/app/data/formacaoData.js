@@ -9,41 +9,41 @@ export const formacoes = [
             {
                 formacao: "Curso",
                 curso: "React e js - Alura",
-                descricao: "40h - 2023",
+                descricao: "14h - 2023",
                 style: "col-sm-4",
             }
         ],
         [
             {
                 formacao: "Curso",
-                curso: "React e js - Alura",
-                descricao: "40h - 2023",
+                curso: "Modelagem e banco de dados - Alura",
+                descricao: "8h - 2023",
                 style: "col-sm-4 col-6"
             },
             {
                 formacao: "Curso",
-                curso: "React e js - Alura",
-                descricao: "40h - 2023",
+                curso: "Avançando com PHP - Alura",
+                descricao: "8h - 2023",
                 style: "col-sm-4 col-6"
             },
             {
                 formacao: "Curso",
-                curso: "React e js - Alura",
-                descricao: "40h - 2023",
+                curso: "Css Grid - Alura",
+                descricao: "8h - 2023",
                 style: "col-sm-4 col-12"
             }
         ],
         [
             {
                 formacao: "Curso",
-                curso: "React e js - Alura",
-                descricao: "40h - 2023",
+                curso: "Angular 14 - Alura",
+                descricao: "10h - 2023",
                 style: "col-sm col-6"
             },
             {
                 formacao: "Curso",
-                curso: "React e js - Alura",
-                descricao: "40h - 2023",
+                curso: "Introdução ao solidity - Udemy",
+                descricao: "4h - 2023",
                 style: "col-sm col-6"
             }
         ]

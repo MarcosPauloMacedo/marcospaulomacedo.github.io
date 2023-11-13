@@ -13,6 +13,7 @@ export default function NavBar(){
                 <NavLi href="#" title="Home" />
                 <NavLi href="#Formacao" title="Formação" />
                 <NavLi href="#Portifolio" title="Portifolio" />
+                {/* <NavBar href="Experiencia" title="Experiência" /> */}
                 <NavLi href="#Contato" title="Contato" />
             </ul>
         </nav>
