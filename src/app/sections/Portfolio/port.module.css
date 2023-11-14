@@ -13,7 +13,6 @@
 .styleP{
     color: #7C8CA9;
     font-size: 14px;
-    text-align: justify;
 }
 
 .styleBox{
@@ -49,14 +48,23 @@
     margin: 0;
 }
 
-.center{
-    text-align: center;
+@media screen and (max-width: 450px) {
+    .subtitle{
+        color: #E2E8F0;
+        font-size: 14px;
+    }
+
+    .boxImg{
+        align-self: baseline;
+        margin-left: 15px;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     .backMobile{
         background:  #26338b1d;
         border-radius: 10px;
-    }
+    }   
 }
 

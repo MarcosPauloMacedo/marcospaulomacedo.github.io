@@ -33,11 +33,11 @@ export function PortBox(props){
      
     return(
         <div ref={divRef} onMouseEnter={mouseEnterStyle} onMouseLeave={mouseLeaveStyle}  onClick={() => click(link)} id="portBox" className={`d-flex p-4 mb-4 me-md-3 border border-0 flex-column flex-md-row align-items-center align-items-md-start ${portStyle.backMobile}`}>
-            <div className="mb-md-0 mb-4">
+            <div className={`mb-md-0 mb-4 ${portStyle.boxImg}`}>
                 <Image src={image} alt={title} width={150} height={80} />
             </div>
             <div className="ps-3 d-flex flex-column">
-                <h6 ref={hRef} className={`text-light d-flex align-self-center align-self-md-start mb-4 ${portStyle.center}`}>
+                <h6 ref={hRef} className={`text-light d-flex align-self-center align-self-md-start mb-4 ${portStyle.subtitle}`}>
                     {title}
                     <div ref={divIRef} className={portStyle.styleI}>
                         <i class={` ms-2 bi bi-arrow-up-right`}></i>
