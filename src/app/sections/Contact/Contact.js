@@ -38,7 +38,7 @@ export function Contact(){
                     <label for="exampleFormControlTextarea1" className="form-label">Assunto</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name='assunto'></textarea>
                 </div>
-                <button type="submit" className={`${contactStyles.styleButton} position-absolute`}>Enviar</button>
+                <button type="submit" className={`${contactStyles.styleButton}`}>Enviar</button>
             </form>
         </section>
     )

@@ -1,5 +1,5 @@
 .styleMain{
-    height: 100vh ;
+    height: 100vh;
     color: #fff;
     margin-top: 68px;
     position: fixed;
@@ -62,6 +62,6 @@
 
     .styleMain{
         position: relative;
+        height: calc(100vh - 68px);
     }
-    
 }
