@@ -2,10 +2,10 @@
     background-color: #101430; 
     color: #7C8CA9;
     padding: 10px;
-}
-
-.borderBox{
     border: 4px solid #0D1024;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .titleBox{

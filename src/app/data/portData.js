@@ -8,7 +8,7 @@ export const portData = [
 
         tech: ["Html", "Css", "Js"],
 
-        link: "https://www.google.com.br/"
+        link: "https://marcospaulomacedo.github.io/vendaMaquininhas/"
     },
     {
         title:"Plataforma de consultas de códigos cnaes",
@@ -30,6 +30,6 @@ export const portData = [
 
         tech: ["Html", "Css", "Js", "Web3.js"],
 
-        link: "https://google.com.br"
+        link: "http://lendcash.com.br/"
     }
 ]

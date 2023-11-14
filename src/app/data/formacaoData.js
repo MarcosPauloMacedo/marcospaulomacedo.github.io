@@ -1,7 +1,7 @@
 export const formacoes = [
         [
             {
-                formacao: "Ensino Superior",
+                formacao: "Ensino Superior - cursando",
                 curso: "Análise e Desenvolvimento de Sistemas",
                 descricao: "Faculdade Imepac Araguari-MG",
                 style: "col-sm-8",
