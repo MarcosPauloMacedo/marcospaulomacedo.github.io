@@ -30,6 +30,6 @@ export const portData = [
 
         tech: ["Html", "Css", "Js", "Web3.js"],
 
-        link: "http://lendcash.com.br/"
+        link: "https://marcospaulomacedo.github.io/lendCash/"
     }
 ]
