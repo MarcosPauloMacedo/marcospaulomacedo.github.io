@@ -18,6 +18,7 @@ export function Contact(){
         }
     
         let link = `mailto: ${email}?subject= ${data.assunto} &body= ${data.nome} - ${data.cel}` 
+        
         window.open(link, '_blank')
         event.target.reset()
     }

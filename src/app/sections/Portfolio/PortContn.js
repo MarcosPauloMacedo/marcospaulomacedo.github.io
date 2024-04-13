@@ -1,12 +1,11 @@
-import { poppins } from "@/app/layout";
 import { PortBox } from "./PortBox";
-import styles from './port.module.css';
+import Title from "@/app/components/Title";
 
 export function PortContn(props){
     const {list} = props;
     return(
         <div>
-            <h3 className={`${styles.styleTitle} ${poppins.className}`}>Portifólio</h3>
+            <Title title='Portfólio' />
             {list.map((item, index) => {
                 return(
                     <PortBox
