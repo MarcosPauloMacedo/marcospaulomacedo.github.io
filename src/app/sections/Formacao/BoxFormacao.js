@@ -1,7 +1,7 @@
-import styles from './boxFormacao.module.css'
 import { poppins } from '@/app/layout'
+import styles from './formacao.module.css'
 
-export function BoxFormacao(props) {
+export default function BoxFormacao(props) {
     const { title, subtitle, text, style } = props
 
     return(

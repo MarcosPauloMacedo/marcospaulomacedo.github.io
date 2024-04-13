@@ -1,7 +1,6 @@
-import { formacoes } from '@/app/data/formacaoData'
-import { poppins } from '@/app/layout'
+import { formacoes } from './dataFormacao'
 import styles from './formacao.module.css'
-import BoxFormacao from '@/app/components/BoxFormacao'
+import BoxFormacao from './BoxFormacao'
 import Title from '@/app/components/Title'
 
 export function Formacao() {
@@ -14,7 +13,13 @@ export function Formacao() {
                         <div key={index} className='row'>
                             {formacao.map((formacaoAtual, i) => {
                                 return(
-                                    <BoxFormacao key={i} title={formacaoAtual.formacao} subtitle={formacaoAtual.curso} text={formacaoAtual.descricao} style={formacaoAtual.style} />
+                                    <BoxFormacao 
+                                        key={i} 
+                                        title={formacaoAtual.formacao} 
+                                        subtitle={formacaoAtual.curso} 
+                                        text={formacaoAtual.descricao} 
+                                        style={formacaoAtual.style} 
+                                    />
                                 )}
                             )}
                         </div>
