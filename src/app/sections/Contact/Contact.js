@@ -1,6 +1,9 @@
 'use client'
 
+import FormControl from '@/app/components/FormControl'
 import contactStyles from './contact.module.css'
+import TextArea from '@/app/components/TextArea'
+import Form from '@/app/components/Form'
 
 export function Contact(){
 
@@ -25,22 +28,20 @@ export function Contact(){
 
     return(
         <section className={`${contactStyles.contact} d-flex flex-column justify-content-center col-md-6`} id="Contato">
-            <form onSubmit={onSubmit} className={`${contactStyles.form} ps-5 pe-5 ms-md-5 me-md-5 d-flex flex-column position-relative`}>
+            <Form onSubmit={onSubmit}>
                 <h2 className={`${contactStyles.title} text-center mb-3`}>Contato</h2>
-                <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Nome</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome completo" name='nome'/>
-                </div>
-                <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Telefone</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="DDD - 99999-9999" name='cel' />
-                </div>
-                <div className="mb-3">
-                    <label for="exampleFormControlTextarea1" className="form-label">Assunto</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name='assunto'></textarea>
-                </div>
-                <button type="submit" className={`${contactStyles.styleButton}`}>Enviar</button>
-            </form>
+                <FormControl 
+                    label='Nome' 
+                    placeholder='Digite seu nome completo' 
+                    name='nome'
+                />
+                <FormControl 
+                    label='Telefone' 
+                    placeholder='DDD - 99999-9999' 
+                    name='cel'
+                />
+                <TextArea label='Assunto' name='assunto'/>
+            </Form>
         </section>
     )
 }
