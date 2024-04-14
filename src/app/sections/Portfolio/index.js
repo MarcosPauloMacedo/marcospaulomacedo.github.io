@@ -1,11 +1,12 @@
+import Title from "@/app/components/Title"
 import { PortContn } from "./PortContn"
 import { PortRoot } from "./PortRoot"
-import { portData } from "@/app/data/portData"
 
 export default function Portfolio(){
     return(
         <PortRoot>
-            <PortContn list={portData} />
+            <Title title="Portfolio" />
+            <PortContn />
         </PortRoot>
     )
 }

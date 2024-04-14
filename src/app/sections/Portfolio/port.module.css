@@ -1,8 +1,3 @@
-.styleH6{
-    color: #54D3CB;
-}
-
-
 .styleP{
     color: #7C8CA9;
     font-size: 14px;
@@ -15,6 +10,14 @@
     transition: transform 0.3s ease;
 }
 
+.styleBox h6{
+    color: #54D3CB;
+}
+
+.styleBox span {
+    transform: translate(3px, -7px);
+}
+
 .styleBox:hover{
   cursor: pointer;
 }
@@ -22,10 +25,6 @@
 .styleI{
     font-size: 0.7rem;
     transition: transform 0.3s ease;
-}
-
-.styleIHover {
-    transform: translate(3px, -7px);
 }
 
 .backgroundTech{
