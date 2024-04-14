@@ -5,7 +5,7 @@ export default function FormationBox(props) {
     const { title, subtitle, text, style } = props
 
     return(
-        <div className={`${style} ${styles.styleBox}`}>
+        <div className={`${style} ${styles.box}`}>
             <div>
                 <h6 className={`${styles.titleBox} ${poppins.className}`}>{title}</h6>
                 <p className={`${poppins.className} fw-semibold mb-4`}>{subtitle}</p>

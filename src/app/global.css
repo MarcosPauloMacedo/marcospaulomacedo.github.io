@@ -1,6 +1,9 @@
 :root{
     --bs-nav-pills-link-active-bg: red;
     --bs-nav-pills-link-active-bg: red;
+    --primary: #0D1024;
+    --secondary: #791E58;
+    --color-text: #7C8CA9;
 }
 
 a {

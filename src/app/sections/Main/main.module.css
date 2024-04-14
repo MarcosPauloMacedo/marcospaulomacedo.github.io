@@ -1,4 +1,4 @@
-.styleMain{
+.main{
     height: 100vh;
     color: #fff;
     margin-top: 68px;
@@ -10,7 +10,7 @@
     * Social
 */
 
-.styleSocial {
+.social {
     position: relative;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@
     animation: movimento 2.5s ease-in-out infinite alternate;
 }
 
-.styleSocial::before {
+.social::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -37,7 +37,7 @@
     transition: 0.5s ease;
 }
 
-.styleSocial::after {
+.social::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -49,18 +49,18 @@
     transition: 0.5s ease;
 }
 
-.styleSocial:hover::before {
+.social:hover::before {
     filter: blur(5px);
 }
 
-.styleSocial:hover::after {
+.social:hover::after {
     transform: scale(0);
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .styleMain{
+    .main{
         position: relative;
         height: calc(100vh - 68px);
     }

@@ -4,20 +4,20 @@ import Contact from "./sections/Contact";
 import Main from "./sections/Main";
 import Navbar from "./sections/Navbar";
 import Portfolio from "./sections/Portfolio";
-import Img from "./sections/Img";
-import Formacao from "./sections/Formation";
+import Home from "./sections/Home";
+import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Navbar />
       <ScroolBox>
         <Main />
         <Box style={styles.box}>
-          <Img />
-          <Formacao />
+          <Home />
+          <Formation />
           <Portfolio />
           <Contact />
           <Description />

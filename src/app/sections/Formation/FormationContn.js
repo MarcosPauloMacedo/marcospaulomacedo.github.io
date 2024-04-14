@@ -1,10 +1,9 @@
 import { formacoes } from './dataFormation'
-import styles from './formation.module.css'
 import FormationBox from './FormationBox'
 
 export function FormationContn() {
     return(
-        <div className={`${styles.formacaoContn} d-flex flex-column`}>
+        <div className='d-flex flex-column'>
             {formacoes.map((formacao, index) => {
                 return(
                     <div key={index} className='row'>

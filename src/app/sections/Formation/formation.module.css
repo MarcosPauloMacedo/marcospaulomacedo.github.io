@@ -1,21 +1,8 @@
-.formacao{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-}
-
-.formacaoContn{
-    height: auto;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.styleBox{
+.box{
     background-color: #101430; 
-    color: #7C8CA9;
+    color: var(--color-text);
     padding: 10px;
-    border: 4px solid #0D1024;
+    border: 4px solid var(--primary);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,11 +15,4 @@
 .textBox{
     font-size: 14px;
     margin: 0px;
-}
-
-@media screen and (max-width: 768px) {
-    .formacao{
-        height: auto;
-        margin-bottom: 30px;
-    }
 }
