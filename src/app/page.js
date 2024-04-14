@@ -5,7 +5,7 @@ import Main from "./sections/Main";
 import Navbar from "./sections/Navbar";
 import Portfolio from "./sections/Portfolio";
 import Img from "./sections/Img";
-import Formacao from "./sections/Formacao";
+import Formacao from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
 

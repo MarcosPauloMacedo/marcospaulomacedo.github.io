@@ -1,11 +1,31 @@
-import mainStyle from './main.module.css'
+import Link from '@/app/components/Link'
+import styles from './main.module.css'
 
 export function MainSocial(){
+    const linkGitHub = 'https://github.com/marcospaulomacedo'
+    const linkLinkedin = 'https://www.linkedin.com/in/marcos-paulo-macedo/'
+    const linkWhatsapp = 'https://wa.me/+5534988464788'
+
     return(
         <div id="mainSocial" className="d-flex">
-            <a className={mainStyle.styleSocial} href="https://github.com/marcospaulomacedo"  target='_blank'><i className="bi bi-github fs-4"></i></a>
-            <a className={mainStyle.styleSocial} href="https://www.linkedin.com/in/marcos-paulo-macedo/" target='_blank'><i className="bi bi-linkedin fs-4"></i></a>
-            <a className={mainStyle.styleSocial} href="https://wa.me/+5534988464788" target='_blank'><i className="bi bi-whatsapp fs-4"></i></a>
+            <Link 
+                target='_blank'
+                href={linkGitHub}
+                className={styles.styleSocial}> 
+                <i className="bi bi-github fs-4"></i>
+            </Link>
+            <Link 
+                target='_blank'
+                href={linkLinkedin}
+                className={styles.styleSocial}>
+                <i className="bi bi-linkedin fs-4"></i>
+            </Link>
+            <Link 
+                target='_blank'
+                href={linkWhatsapp}
+                className={styles.styleSocial}> 
+                <i className="bi bi-whatsapp fs-4"></i>
+            </Link>
         </div>
     )
 }

@@ -1,7 +1,12 @@
 export function Link(props){
-    const { className, href, title} = props
+    const { className, href, target, children} = props
 
     return(
-        <a className={`${className} nav-link`} href={href}>{title}</a>
+        <a 
+            href={href} 
+            className={className}
+            target={target? target: '_self'}>
+            {children}
+        </a>
     )
 }

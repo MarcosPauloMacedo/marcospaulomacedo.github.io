@@ -1,7 +1,7 @@
 import styles from './port.module.css'
 
 export default function PortBox(props){
-    const {children, mouseEnter, mouseLeave} = props
+    const {mouseEnter, mouseLeave, children} = props
 
     return(
         <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}

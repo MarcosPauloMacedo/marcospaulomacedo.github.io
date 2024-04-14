@@ -3,8 +3,8 @@ import NavLi from "./NavLi"
 const itemList = [
     {title: "Home", href: "#"},
     {title: "Formação", href: "#Formacao"},
-    {title: "Portfolio", href: "#Portifolio"},
-    {title: "Contact", href: "#Contato"}
+    {title: "Portifólio", href: "#Portifolio"},
+    {title: "Contato", href: "#Contato"}
 ]
 
 export default function NavUl(){

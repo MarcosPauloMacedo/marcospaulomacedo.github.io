@@ -1,7 +1,7 @@
 import { poppins } from '@/app/layout'
-import styles from './formacao.module.css'
+import styles from './formation.module.css'
 
-export default function BoxFormacao(props) {
+export default function FormationBox(props) {
     const { title, subtitle, text, style } = props
 
     return(

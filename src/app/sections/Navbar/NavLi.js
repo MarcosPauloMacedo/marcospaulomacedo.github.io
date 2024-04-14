@@ -5,7 +5,7 @@ export default function NavLi(props){
 
     return(
         <li class="nav-item">
-            <Link href={href} title={title}/>
+            <Link className={'nav-link'} href={href}>{title}</Link>
         </li>
     )
 } 
