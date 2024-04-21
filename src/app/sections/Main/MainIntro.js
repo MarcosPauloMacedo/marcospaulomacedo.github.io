@@ -1,15 +1,16 @@
-import P from '@/app/components/Paragraph'
 import { Text } from '@/app/components/Text/Text'
 
 export function MainIntro(){
     return(
         <div>
             <Text tag='h1'>Dev. Marcos Paulo</Text>
-            <P style={{color: 'var(--secondary)'}} className='h4'>Web developer</P>
-            <P className='mb-4 mt-3 me-md-5 pe-md-5'>
+            <Text tag='p' style={{color: 'var(--secondary)'}} className='h4'>
+                Web developer
+            </Text>
+            <Text tag='p' className='mb-4 mt-3 me-md-5 pe-md-5'>
                 Minha missão é criar designers bonitos e funcionais que ajudem a melhorar
                 a experiência do usuário em qualquer dispositivo.
-            </P>
+            </Text>
         </div>
     )
 }

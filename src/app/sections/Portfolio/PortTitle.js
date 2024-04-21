@@ -1,17 +1,15 @@
 import styles from './port.module.css'
-import P from '@/app/components/Paragraph'
+import Text from '@/app/components/Text'
 
 export default function PortTitle(props){
     return(
         <header>
-            <P className={'d-flex h6 mb-4'}>
+            <Text tag='h4' className='d-flex'>
                 {props.title}
                 <span className={styles.styleI}>
                     <i class={` ms-2 bi bi-arrow-up-right`}></i>
                 </span>
-            </P>
+            </Text>
         </header>
     )
 }
-
-// text-light d-flex align-self-center align-self-md-start mb-4 ${styles.subtitle}

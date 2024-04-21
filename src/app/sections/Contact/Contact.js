@@ -4,7 +4,7 @@ import FormControl from '@/app/components/FormControl'
 import contactStyles from './contact.module.css'
 import TextArea from '@/app/components/TextArea'
 import Form from '@/app/components/Form'
-import P from '@/app/components/Paragraph'
+import Text from '@/app/components/Text'
 
 export function Contact(){
 
@@ -30,7 +30,11 @@ export function Contact(){
     return(
         <section className={`${contactStyles.contact} d-flex flex-column justify-content-center col-md-6`} id="Contato">
             <Form onSubmit={onSubmit}>
-                <P className={`${contactStyles.title} text-center mb-3 fs-2 fw-semibold`}>Contato</P>
+                <Text 
+                    tag='p' 
+                    className={`${contactStyles.title} text-center mb-3 fs-2 fw-semibold`}>
+                        Contato
+                </Text>
                 <FormControl 
                     label='Nome' 
                     name='nome'

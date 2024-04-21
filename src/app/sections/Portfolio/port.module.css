@@ -1,3 +1,9 @@
+.portTech{
+    background: #122D3E;
+    color:#54D3CB;
+    font-size: 13px;
+}
+
 .styleP{
     color: #7C8CA9;
     font-size: 14px;
@@ -8,6 +14,10 @@
     border-radius: 10px;
     background-color: #26338b1d;
     transition: transform 0.3s ease;
+}
+
+.styleBoxHeader header{
+    color: #fff;
 }
 
 .styleBox header{

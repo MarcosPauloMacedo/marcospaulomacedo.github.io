@@ -11,11 +11,13 @@ import styles from './port.module.css'
 export function PortContn(){
 
     const mouseEnter = (e) => {
+        e.currentTarget.classList.remove(styles.styleBoxHeader)
         e.currentTarget.classList.add(styles.styleBox)
     }
 
     const mouseLeave = (e) => {
         e.currentTarget.classList.remove(styles.styleBox)
+        e.currentTarget.classList.add(styles.styleBoxHeader)
     }
     
     return(
