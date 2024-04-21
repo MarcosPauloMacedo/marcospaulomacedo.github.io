@@ -3,7 +3,7 @@ import Text from '@/app/components/Text'
 
 export function Description() {
     return(
-        <footer className="col-md-6 p-5">
+        <footer className="p-5">
             <Text tag='p' className={styles.color}>
                 Desenvolvido com 
                 <span className={styles.colorSpan}> Next.js </span> 

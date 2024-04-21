@@ -1,13 +1,19 @@
-.img{
+.home{
     height: calc(100vh - 68px);
 }
 
+.img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+}
+
 @media screen and (max-width: 768px) {
-    .img img{
+    .img{
         display: none;
     }
 
-    .img{
+    .home{
         height: 100%;
     }
 }

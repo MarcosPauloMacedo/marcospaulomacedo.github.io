@@ -6,7 +6,7 @@ export function FormationContn() {
         <div className='d-flex flex-column'>
             {formacoes.map((formacao, index) => {
                 return(
-                    <div key={index} className='row'>
+                    <div key={index} className='d-flex'>
                         {formacao.map((formacaoAtual, i) => {
                             return(
                                 <FormationBox 

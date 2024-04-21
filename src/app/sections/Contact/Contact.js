@@ -28,7 +28,7 @@ export function Contact(){
     }
 
     return(
-        <section className={`${contactStyles.contact} d-flex flex-column justify-content-center col-md-6`} id="Contato">
+        <section className={`${contactStyles.contact} d-flex flex-column justify-content-center padding-top-nav`} id="Contato">
             <Form onSubmit={onSubmit}>
                 <Text 
                     tag='p' 
