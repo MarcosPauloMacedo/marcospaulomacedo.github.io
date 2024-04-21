@@ -1,9 +1,17 @@
-import styles from './description.module.css';
+import styles from './description.module.css'
+import Text from '@/app/components/Text'
 
 export function Description() {
     return(
-        <div className="col-md-6 p-5">
-            <p className={styles.color}>Desenvolvido com Next.js para uma experiência dinâmica e Bootstrap para uma estrutura sólida e responsiva. A implantação é feita com a eficiência do GitPages.</p>
-        </div>
+        <footer className="col-md-6 p-5">
+            <Text tag='p' className={styles.color}>
+                Desenvolvido com 
+                <span className={styles.colorSpan}> Next.js </span> 
+                para uma experiência dinâmica e
+                <span className={`${styles.colorSpan}`}> Bootstrap </span> 
+                para uma estrutura sólida e responsiva. A implantação é feita pela ferramenta DX-Plataform da 
+                <span className={`${styles.colorSpan}`}> Vercel.</span>
+            </Text>
+        </footer>
     )
 }

@@ -1,23 +1,12 @@
-.portifolio{
-    width: 100%;
-}
-
-.styleH6{
-    color: #54D3CB;
-}
-
-.styleTitle{
-    color: #54D3CB;
-    border-bottom: 1px solid #54D3CB;
-    font-size: 20px;
-    text-align:right;
-    margin-bottom: 20px;
+.portTech{
+    background: #122D3E;
+    color:#54D3CB;
+    font-size: 13px;
 }
 
 .styleP{
     color: #7C8CA9;
     font-size: 14px;
-    text-align: justify;
 }
 
 .styleBox{
@@ -27,6 +16,18 @@
     transition: transform 0.3s ease;
 }
 
+.styleBoxHeader header{
+    color: #fff;
+}
+
+.styleBox header{
+    color: #54D3CB;
+}
+
+.styleBox span {
+    transform: translate(3px, -7px);
+}
+
 .styleBox:hover{
   cursor: pointer;
 }
@@ -34,10 +35,6 @@
 .styleI{
     font-size: 0.7rem;
     transition: transform 0.3s ease;
-}
-
-.styleIHover {
-    transform: translate(3px, -7px);
 }
 
 .backgroundTech{
@@ -53,7 +50,23 @@
     margin: 0;
 }
 
-.center{
-    text-align: center;
+@media screen and (max-width: 450px) {
+    .subtitle{
+        color: #E2E8F0;
+        font-size: 14px;
+    }
+
+    .boxImg{
+        align-self: baseline;
+        margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .backMobile{
+        background:  #26338b1d;
+        border-radius: 10px;
+    }   
 }
 

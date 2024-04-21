@@ -7,7 +7,6 @@ export default function Main(){
         <MainRoot>
             <MainIntro />
             <MainSocial />
-            <h6 className="text-danger">Portifolio ainda em desenvolvimento..</h6>
         </MainRoot>
     )
 }
