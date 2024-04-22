@@ -3,7 +3,7 @@
 const theme = {
     text: {
         h1: {
-            fontSize: '2.5rem',
+            fontSize: '2.3rem',
             marginBottom: '3rem',
         },
         h2: {

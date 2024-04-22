@@ -1,5 +1,6 @@
 .home{
-    height: calc(100vh - 68px);
+    height: calc(100vh - 5rem);
+    display: flex;
 }
 
 .img{
@@ -8,12 +9,16 @@
     height: 70%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .img{
-        display: none;
+        width: 90%;
+        height: 90%;
     }
+    
+}
 
+@media screen and (max-width: 768px) {
     .home{
-        height: 100%;
+        display: none;
     }
 }

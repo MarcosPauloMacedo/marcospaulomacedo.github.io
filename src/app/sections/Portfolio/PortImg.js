@@ -5,7 +5,7 @@ export default function PortImg(props){
     const {image,title} = props
 
     return(
-        <div className={`mb-md-0 mb-4 ${styles.boxImg}`}>
+        <div className={` ${styles.boxImg}`}>
             <Image src={image} alt={title} width={150} height={80} />
         </div>
     )
