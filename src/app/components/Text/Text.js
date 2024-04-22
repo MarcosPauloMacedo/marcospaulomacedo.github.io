@@ -3,7 +3,7 @@
 const theme = {
     text: {
         h1: {
-            fontSize: '2.5rem',
+            fontSize: '2.3rem',
             marginBottom: '3rem',
         },
         h2: {
@@ -30,16 +30,13 @@ export function Text(props){
     const { tag, style, className, children} = props
     const Tag = tag
 
-    return(
-        <>
-            <Tag style={style} className={className}>{children}</Tag>
+    const combinedStyle = {
+        fontSize: theme.text[tag].fontSize,
+        marginBottom: theme.text[tag].marginBottom,
+        ...style
+    }
 
-            <style jsx>{`
-                ${Tag} {
-                    font-size: ${theme.text[tag].fontSize};
-                    margin-bottom: ${theme.text[tag].marginBottom};
-                }
-            `}</style>
-        </>
+    return(
+        <Tag style={combinedStyle} className={className}>{children}</Tag>
     )
 }

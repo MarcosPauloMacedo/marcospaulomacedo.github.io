@@ -1,7 +1,7 @@
 import NavLi from "./NavLi"
 
 const itemList = [
-    {title: "Home", href: "#"},
+    {title: "Home", href: "#home"},
     {title: "Formação", href: "#Formacao"},
     {title: "Portifólio", href: "#Portifolio"},
     {title: "Contato", href: "#Contato"}

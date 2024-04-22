@@ -3,8 +3,10 @@ import styles from './img.module.css'
 
 export function Home() {
     return (
-        <section className={`${styles.img} d-flex align-items-center`}>
-            <Image src="/img/dev.svg" alt="Picture of the author" width={400} height={400}  />
+        <section id='home' className={`${styles.home} align-items-center justify-content-center`}>
+            <div className={styles.img}>
+                <Image className={styles.img} src="/img/dev.svg" alt="Picture of the author" fill='true' />
+            </div>
         </section>
     )
 }

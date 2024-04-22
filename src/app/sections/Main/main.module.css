@@ -1,9 +1,14 @@
 .main{
-    height: 100vh;
+    height: calc(100vh - 6rem);
+    display: flex;
+    align-items: center;
     color: #fff;
-    margin-top: 68px;
-    position: fixed;
     top: 0;
+}
+
+.mainCont{
+    width: 40%;
+    position: fixed;
 }
 
 /**
@@ -63,5 +68,10 @@
     .main{
         position: relative;
         height: calc(100vh - 68px);
+    }
+
+    .mainCont{
+        width: 100%;
+        position: relative;
     }
 }

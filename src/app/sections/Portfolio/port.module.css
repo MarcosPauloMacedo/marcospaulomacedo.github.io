@@ -10,7 +10,6 @@
 }
 
 .styleBox{
-    border: 1px solid #26338b;
     border-radius: 10px;
     background-color: #26338b1d;
     transition: transform 0.3s ease;
@@ -50,6 +49,16 @@
     margin: 0;
 }
 
+.box{
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.boxImg{
+    margin: 0 0 1rem 1rem;
+}
+
 @media screen and (max-width: 450px) {
     .subtitle{
         color: #E2E8F0;
@@ -68,5 +77,11 @@
         background:  #26338b1d;
         border-radius: 10px;
     }   
+}
+
+@media screen and (max-width: 1000px) {
+    .box{
+        flex-wrap: wrap;
+    }
 }
 
