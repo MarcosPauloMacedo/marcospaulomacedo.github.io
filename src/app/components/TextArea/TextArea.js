@@ -1,14 +1,16 @@
 export function TextArea(props){
-    const {label, rows, name} = props;
+    const {label, id, textAreaRef, rows, name} = props;
 
     return(
         <div className="mb-3">
-            <label for="exampleFormControlTextarea1" className="form-label">{label}</label>
+            <label for={id} className="form-label">{label}</label>
             <textarea 
                 className="form-control" 
-                id="exampleFormControlTextarea1" 
+                id={id} 
+                ref={textAreaRef? textAreaRef: null}
                 rows={rows? rows: '3'} 
-                name={name}>
+                name={name}
+                {...props}>
             </textarea>
         </div>
     )

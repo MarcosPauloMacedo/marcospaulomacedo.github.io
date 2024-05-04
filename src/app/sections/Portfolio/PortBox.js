@@ -1,12 +1,12 @@
 import styles from './port.module.css'
 
 export default function PortBox(props){
-    const {mouseEnter, mouseLeave, children} = props
+    const {link, mouseEnter, mouseLeave, children} = props
 
     return(
-        <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
+        <a href={link} target='blank' onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}
             className={`${styles.box} ${styles.backMobile} ${styles.styleBoxHeader}`}>
                 {children}
-        </div>
+        </a>
     )
 }

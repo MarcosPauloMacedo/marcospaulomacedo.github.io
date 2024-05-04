@@ -23,7 +23,7 @@ export function PortContn(){
     return(
         <div>
             {portifolios.map((item, index) => (
-                <PortBox mouseEnter={mouseEnter} mouseLeave={mouseLeave} key={index}>
+                <PortBox link={item.link} mouseEnter={mouseEnter} mouseLeave={mouseLeave} key={index}>
                     <PortImg key={index} image={item.image} title={item.title} />
                     <div className="ps-3 d-flex flex-column">
                         <PortTitle key={index} title={item.title} />
