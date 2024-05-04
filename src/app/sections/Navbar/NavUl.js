@@ -1,7 +1,8 @@
+import { ThemeSwitcher } from "../../components/ThemeSwitcher/ThemeSwitcher"
 import NavLi from "./NavLi"
 
 const itemList = [
-    {title: "Home", href: "#home"},
+    {title: "Home", href: "#main"},
     {title: "Formação", href: "#Formacao"},
     {title: "Portifólio", href: "#Portifolio"},
     {title: "Contato", href: "#Contato"}
@@ -14,6 +15,8 @@ export default function NavUl(){
             {itemList.map((item, index) => (
                 <NavLi key={index} title={item.title} href={item.href} />
             ))}
+            
+            <ThemeSwitcher />
         </ul>
     )
 }

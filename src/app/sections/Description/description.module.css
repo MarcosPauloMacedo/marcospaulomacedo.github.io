@@ -1,7 +1,7 @@
 .color{
-    color: #7C8CA9;
+    color: var(--text-secondary);
 }
 
 .colorSpan{
-    color: #54D3CB;;
+    color: var(--text-primary);
 }

@@ -4,7 +4,8 @@ export default function NavLogo(){
     return(
         <Link 
             href="#"
-            className="fs-2 fw-semibold navbar-brand text-light">
+            style={{'color': 'var(--white)'}}
+            className="fs-2 fw-semibold navbar-brand">
             Portfolio.
         </Link>
     )

@@ -1,6 +1,6 @@
 .box{
-    background-color: #101430; 
-    color: var(--color-text);
+    background-color: var(--container-primary);
+    color: var(--text-secondary);
     padding: 10px;
     border: 4px solid var(--primary);
     display: flex;

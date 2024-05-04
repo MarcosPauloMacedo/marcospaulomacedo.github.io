@@ -1,10 +1,10 @@
 .contact{
-    background: #0D1024;
+    background: var(--primary);
     height: calc(100vh - 68px);
 }
 
 .title{
-    color: #791E58;
+    color: var(--secondary);
 }
 
 @media screen and (max-width: 450px) {

@@ -1,26 +1,26 @@
 .portTech{
-    background: #122D3E;
-    color:#54D3CB;
+    background: var(--box);
+    color: var(--text-primary);
     font-size: 13px;
 }
 
 .styleP{
-    color: #7C8CA9;
+    color: var(--text-secondary);
     font-size: 14px;
 }
 
 .styleBox{
     border-radius: 10px;
-    background-color: #26338b1d;
+    background-color: var(--container-secondary);
     transition: transform 0.3s ease;
 }
 
 .styleBoxHeader header{
-    color: #fff;
+    color: var(--white);
 }
 
 .styleBox header{
-    color: #54D3CB;
+    color: var(--text-primary);
 }
 
 .styleBox span {
@@ -37,8 +37,8 @@
 }
 
 .backgroundTech{
-    background: #122D3E;
-    color:#54D3CB;
+    background: var(--box);
+    color: var(--text-primary);
 }
 
 .fontSize16{
@@ -53,6 +53,7 @@
     display: flex;
     margin-bottom: 2rem;
     padding: 1rem;
+    text-decoration: none;
 }
 
 .boxImg{
@@ -60,11 +61,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    .subtitle{
-        color: #E2E8F0;
-        font-size: 14px;
-    }
-
+    
     .boxImg{
         align-self: baseline;
         margin-left: 15px;
@@ -74,7 +71,7 @@
 
 @media screen and (max-width: 768px) {
     .backMobile{
-        background:  #26338b1d;
+        background:  var(--container-secondary);
         border-radius: 10px;
     }   
 }

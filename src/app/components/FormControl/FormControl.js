@@ -1,15 +1,19 @@
-export function FormControl(props){
-    const {label, type, placeholder, name, required, autoComplete} = props;
+import ReactInputMask from "react-input-mask";
+
+export function FormControl({inputRef, ...props}){
+    const {label, id, type, name, mask} = props;
+
     return(
         <div className="mb-3">
-            <label for="exampleFormControlInput1" className="form-label">{label}</label>
-            <input type={type? type : "text"} 
-                className="form-control" 
-                id="exampleFormControlInput1" 
-                placeholder={placeholder} 
+            <label for={id} className="form-label">{label}</label>
+            <ReactInputMask
+                className="form-control"
+                id={id}
+                ref={inputRef? inputRef: null}
+                type={type? type : "text"}
+                mask={mask? mask : ""}
                 name={name}
-                required={required? required : true}
-                autoComplete={autoComplete? autoComplete : "on"}
+                {...props}
             />
         </div>
     )

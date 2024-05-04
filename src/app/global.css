@@ -1,7 +1,34 @@
-:root{
+/* :root{
+    --white: #fff;
+    --box: #122D3E;
     --primary: #0D1024;
     --secondary: #791E58;
-    --color-text: #7C8CA9;
+    --text-primary: #54D3CB;
+    --text-secondary: #7C8CA9;
+    --container-primary: #101430;
+    --container-secondary: #26338b1d;
+} */
+
+[data-theme="dark"] {
+    --white: #fff;
+    --box: #122D3E;
+    --primary: #0D1024;
+    --secondary: #791E58;
+    --text-primary: #54D3CB;
+    --text-secondary: #7C8CA9;
+    --container-primary: #101430;
+    --container-secondary: #26338b1d;
+}
+
+[data-theme="light"] {
+    --primary: #F2F2F2; 
+    --secondary: #0D1024;
+    --text-primary: #791E58;
+    --white: #0D1024;
+    --container-primary: #E6E6E6;
+    --container-secondary: #E6E6E6;
+    --text-secondary: #0D1024;
+    --box: #FFF;
 }
 
 a {
@@ -10,23 +37,23 @@ a {
 }
 
 .background{
-    background: #0D1024;
+    background: var(--primary);
 }
 
 .nav{
-    --bs-nav-link-hover-color: #7C8CA9;
+    --bs-nav-link-hover-color: var(--text-secondary);
 }
 
 .nav-link{
-    color: #7C8CA9;
+    color: var(--text-secondary);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: #0D1024;
-    color: #791E58;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
 .padding-top-nav{

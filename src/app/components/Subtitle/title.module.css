@@ -1,6 +1,6 @@
 .title{
-    color: #54D3CB;
-    border-bottom: 1px solid #54D3CB;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--text-primary);
     text-align:right;
     margin-bottom: 20px;
 }
