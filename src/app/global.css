@@ -1,15 +1,4 @@
-/* :root{
-    --white: #fff;
-    --box: #122D3E;
-    --primary: #0D1024;
-    --secondary: #791E58;
-    --text-primary: #54D3CB;
-    --text-secondary: #7C8CA9;
-    --container-primary: #101430;
-    --container-secondary: #26338b1d;
-} */
-
-[data-theme="dark"] {
+.dark{
     --white: #fff;
     --box: #122D3E;
     --primary: #0D1024;
@@ -20,7 +9,7 @@
     --container-secondary: #26338b1d;
 }
 
-[data-theme="light"] {
+.light {
     --primary: #F2F2F2; 
     --secondary: #0D1024;
     --text-primary: #791E58;
@@ -34,10 +23,6 @@
 a {
     letter-spacing: 0px;
     font-family: var(--font-poppins);
-}
-
-.background{
-    background: var(--primary);
 }
 
 .nav{

@@ -19,7 +19,7 @@ export const quicksand = Quicksand({
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className='background'>
+      <body>
         {children}
         <Script />
       </body>

@@ -7,7 +7,7 @@ export default function PortTitle(props){
             <Text tag='h4' className='d-flex'>
                 {props.title}
                 <span className={styles.styleI}>
-                    <i class={` ms-2 bi bi-arrow-up-right`}></i>
+                    <i className={` ms-2 bi bi-arrow-up-right`}></i>
                 </span>
             </Text>
         </header>

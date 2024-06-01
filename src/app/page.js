@@ -8,13 +8,13 @@ import Home from "./sections/Home";
 import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
-import Theme from "./components/Theme";
+import { getTheme } from "./cookies/themes";
 
-export default function Page() {
-  
+export default async function Page() {
+  const theme = await getTheme();
+
   return (
-    <>
-      <Theme />
+    <div className={`${styles.background} ${theme}`}>
       <Navbar />
       <ScroolBox>
         <Main />
@@ -26,6 +26,6 @@ export default function Page() {
           <Description />
         </Box>
       </ScroolBox>
-    </>
+    </div>
   )
 }

@@ -3,7 +3,7 @@ export function TextArea(props){
 
     return(
         <div className="mb-3">
-            <label for={id} className="form-label">{label}</label>
+            <label htmlFor={id} className="form-label">{label}</label>
             <textarea 
                 className="form-control" 
                 id={id} 
