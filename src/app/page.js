@@ -8,7 +8,6 @@ import Home from "./sections/Home";
 import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
-import { getTheme } from "./cookies/themes";
 
 export default function Page() {
   const theme = 'dark'

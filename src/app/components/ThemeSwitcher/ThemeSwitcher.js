@@ -1,11 +1,9 @@
 'use client'
 
-import { alterTheme } from '@/app/cookies/themes'
 import styles from './themeSwitcher.module.css'
 
 export function ThemeSwitcher(props){
     const handleClick = async () => {
-        await alterTheme()
     }
 
     return (
