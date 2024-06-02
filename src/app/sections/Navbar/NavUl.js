@@ -1,5 +1,5 @@
 import { ThemeSwitcher } from "../../components/ThemeSwitcher/ThemeSwitcher"
-import { getTheme } from "@/app/cookies/themes"
+import { cookies } from "next/headers"
 import NavLi from "./NavLi"
 
 const itemList = [
@@ -9,8 +9,10 @@ const itemList = [
     {title: "Contato", href: "#Contato"}
 ]
 
-export default async function NavUl(){
-    const icon = await getTheme() === 'dark' ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
+export default function NavUl(){
+    const cookieStore = cookies()
+    const theme = cookieStore.has('theme') ? cookieStore.get('theme').value : 'dark'
+    const icon = theme === 'dark' ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
 
     return(
         <ul className="collapse navbar-collapse nav nav-pills justify-content-end" 

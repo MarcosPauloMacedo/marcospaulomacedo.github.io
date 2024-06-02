@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import './global.css'
 
-export const dynamicParams = true
-
 export const poppins = Poppins({ 
   subsets: ['latin'],
   variable: '--font-poppins',

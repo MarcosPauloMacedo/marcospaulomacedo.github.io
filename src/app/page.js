@@ -8,12 +8,15 @@ import Home from "./sections/Home";
 import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
-import { getTheme } from "./cookies/themes";
+import { cookies } from "next/headers";
 
 export const dynamic = 'force-dynamic'
 
-export default async function Page() {
-  const theme = await getTheme()
+export default function Page() {
+  const cookieStore = cookies()
+  let theme = 'dark'
+
+  if(cookieStore.has('theme')) theme = cookieStore.get('theme').value
 
   return (
     <div className={`${styles.background} ${theme}`}>
