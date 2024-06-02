@@ -9,6 +9,8 @@ import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
 
+export const dynamic = 'force-dynamic'
+
 export default function Page() {
   const theme = 'dark'
 
