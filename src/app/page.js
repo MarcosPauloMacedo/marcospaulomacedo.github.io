@@ -10,8 +10,15 @@ import Description from "./sections/Description";
 import styles from './page.module.css';
 import { getTheme } from "./cookies/themes";
 
-export default async function Page() {
+async function getCookieTheme(){
   const theme = await getTheme();
+  return new Promise((resolve) => {
+    resolve(theme);
+  });
+}
+
+export default async function Page() {
+  const theme = await getCookieTheme();
 
   return (
     <div className={`${styles.background} ${theme}`}>
