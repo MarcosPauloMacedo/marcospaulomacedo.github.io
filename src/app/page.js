@@ -8,11 +8,12 @@ import Home from "./sections/Home";
 import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
+import { getTheme } from "./cookies/themes";
 
 export const dynamic = 'force-dynamic'
 
-export default function Page() {
-  const theme = 'dark'
+export default async function Page() {
+  const theme = await getTheme()
 
   return (
     <div className={`${styles.background} ${theme}`}>
