@@ -1,7 +1,7 @@
 import { ThemeSwitcher } from "../../components/ThemeSwitcher/ThemeSwitcher"
-import { cookies } from "next/headers"
-import { theme, dark } from "@/app/cookies/themes"
+import { dark } from "@/app/cookies/themes"
 import NavLi from "./NavLi"
+import { getTheme } from "@/app/server/getTheme"
 
 const itemList = [
     {title: "Home", href: "#main"},
@@ -11,8 +11,8 @@ const itemList = [
 ]
 
 export default function NavUl(){
-    const themeValue = cookies().has(theme) ? cookies().get(theme).value : dark
-    const icon = themeValue === dark ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
+    const theme = getTheme()
+    const icon = theme === dark ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
 
     return(
         <ul className="collapse navbar-collapse nav nav-pills justify-content-end" 

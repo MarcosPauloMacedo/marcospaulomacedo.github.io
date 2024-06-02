@@ -8,15 +8,15 @@ import Home from "./sections/Home";
 import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
-import { cookies } from "next/headers";
-import { theme, dark } from "@/app/cookies/themes";
+import { getTheme } from "./server/getTheme";
+
+export const dynamic = 'force-dynamic'
 
 export default function Page() {
-  let themeValue = dark
-  if(cookies().has(theme)) themeValue = cookies().get(theme).value
+  const theme = getTheme()
 
   return (
-    <div className={`${styles.background} ${themeValue}`}>
+    <div className={`${styles.background} ${theme}`}>
       <Navbar />
       <ScroolBox>
         <Main />
