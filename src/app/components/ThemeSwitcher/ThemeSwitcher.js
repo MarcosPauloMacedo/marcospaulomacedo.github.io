@@ -3,11 +3,11 @@
 import { alterTheme } from '@/app/cookies/themes'
 import styles from './themeSwitcher.module.css'
 
-const handleClick = async () => {
-    await alterTheme()
-}
-
 export function ThemeSwitcher(props){
+    const handleClick = async () => {
+        await alterTheme()
+    }
+
     return (
         <i onClick={handleClick} className={` ${styles.icon} bi ${props.icon}`}></i>
     )

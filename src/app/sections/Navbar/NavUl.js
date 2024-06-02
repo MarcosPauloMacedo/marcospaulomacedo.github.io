@@ -9,15 +9,8 @@ const itemList = [
     {title: "Contato", href: "#Contato"}
 ]
 
-async function getCookieTheme(){
-    const theme = await getTheme();
-    return new Promise((resolve) => {
-        resolve(theme);
-    });
-}
-
 export default async function NavUl(){
-    const icon = await getCookieTheme() === 'dark' ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
+    const icon = await getTheme() === 'dark' ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
 
     return(
         <ul className="collapse navbar-collapse nav nav-pills justify-content-end" 
