@@ -1,6 +1,6 @@
 'use client'
 
-import { alterTheme } from '@/app/cookies/themes'
+import alterTheme from '@/app/server/alterTheme'
 import styles from './themeSwitcher.module.css'
 
 export function ThemeSwitcher(props){

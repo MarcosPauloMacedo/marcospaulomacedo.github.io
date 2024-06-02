@@ -9,17 +9,14 @@ import Formation from "./sections/Formation";
 import Description from "./sections/Description";
 import styles from './page.module.css';
 import { cookies } from "next/headers";
-
-export const dynamic = 'force-dynamic'
+import { theme, dark } from "@/app/cookies/themes";
 
 export default function Page() {
-  const cookieStore = cookies()
-  let theme = 'dark'
-
-  if(cookieStore.has('theme')) theme = cookieStore.get('theme').value
+  let themeValue = dark
+  if(cookies().has(theme)) themeValue = cookies().get(theme).value
 
   return (
-    <div className={`${styles.background} ${theme}`}>
+    <div className={`${styles.background} ${themeValue}`}>
       <Navbar />
       <ScroolBox>
         <Main />
