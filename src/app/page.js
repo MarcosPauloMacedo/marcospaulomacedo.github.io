@@ -10,8 +10,6 @@ import Description from "./sections/Description";
 import styles from './page.module.css';
 import { getTheme } from "./server/getTheme";
 
-export const dynamic = 'force-dynamic'
-
 export default function Page() {
   const theme = getTheme()
 

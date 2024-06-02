@@ -1,6 +1,6 @@
+import NavLi from "./NavLi"
 import { ThemeSwitcher } from "../../components/ThemeSwitcher/ThemeSwitcher"
 import { dark } from "@/app/cookies/themes"
-import NavLi from "./NavLi"
 import { getTheme } from "@/app/server/getTheme"
 
 const itemList = [
@@ -11,8 +11,7 @@ const itemList = [
 ]
 
 export default function NavUl(){
-    const theme = getTheme()
-    const icon = theme === dark ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
+    const icon = getTheme() === dark ? 'bi-moon-stars-fill' : 'bi-brightness-high-fill'
 
     return(
         <ul className="collapse navbar-collapse nav nav-pills justify-content-end" 
