@@ -15,9 +15,11 @@ async function hasTheme(){
 }
 
 export async function getTheme(){
-   if(hasTheme()){
-       return cookies().get(theme).value
-   }
+    const hasThemeInCookie = await hasTheme()
+
+    if(hasThemeInCookie){
+        return cookies().get(theme).value
+    }
 
     return dark
 }
