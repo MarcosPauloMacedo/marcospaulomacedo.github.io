@@ -17,7 +17,7 @@ export const portifolios = [
         title: 'Site de empréstimos com criptomoeda',
         description: "Lend Cash é um site inovador que oferece empréstimos descentralizados baseados em contratos inteligentes na rede Ethereum.<br><br>Utilizando a tecnoligia blockchain, a plataforma proporciona uma solução segura para aqueles que precisam de acesso rápido a empréstimos.",
         image: '/img/img-lendCash.png',
-        tech: ["Html", "Css", "Js", "Web3.js"],
-        link: "https://marcospaulomacedo.github.io/lendCash/"
+        tech: ["Solidity", "Nextjs", "Web3.js"],
+        link: "https://lend-cash.vercel.app/dashboard"
     }
 ]
